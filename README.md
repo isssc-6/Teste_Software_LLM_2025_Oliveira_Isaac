@@ -26,7 +26,9 @@ Em síntese, a proposta utiliza a aptidão do ChatGPT para entender o significad
 
 ## 4. Identificação do modelo
 
-*O modelo utilizado no trabalho selecionado é o GPT-3. Atualmente, o modelo não está mais acessível. Com relação ao tipo de arquitetura, o GPT-3 foi construído sobre decodificadores Transformer multicamada, ou seja, é do tipo decoder-only.*
+O modelo utilizado no trabalho selecionado é o *GPT-3*. Atualmente, o modelo não está mais acessível. Com relação ao tipo de arquitetura, o *GPT-3* foi construído sobre decodificadores *Transformer* multicamada, ou seja, é do tipo *decoder-only*.
+
+Já nos exemplos, usamos o modelo DeepSeek-V3-Base. Ela está disponível no *HuggingFace* através desse (*link*)[https://huggingface.co/deepseek-ai/DeepSeek-V3-Base]. Assim como o *GTP-3*, esse modelo é do tipo *decoder-only*.
 
 ## 5. Identificação do dataset
 
@@ -61,7 +63,7 @@ A avaliação da clareza do código foi desmembrada em duas partes distintas:
 
 Em média, foram encontradas cerca de 70 infrações ao *Google Java Style* e 28 ao *Sun Code Conventions*. Problemas de indentação foram os mais frequentes, indicando que o ChatGPT deve aprimorar a consistência da formatação do código para otimizar a legibilidade.
 
-Todos os 3302 métodos analisados demonstraram baixa complexidade cognitiva (&lt;5), indicando fácil compreensão. Praticamente todos os métodos (3300 de 3302) apresentaram baixa complexidade ciclomática (1-4), e os 2 métodos restantes exibiram complexidade moderada (5-7).
+Todos os 3302 métodos analisados demonstraram baixa complexidade cognitiva, indicando fácil compreensão. Praticamente todos os métodos (3300 de 3302) apresentaram baixa complexidade ciclomática (1-4), e os 2 métodos restantes exibiram complexidade moderada (5-7).
 
 Apesar das falhas no estilo do código, os testes automatizados criados pelo ChatGPT são, em sua maioria, simples de entender e de baixa complexidade.
 
@@ -92,6 +94,16 @@ Como resultado, considerando a padronização de estilo Java do Google, foram id
 
 Já na verificação feita utilizando as convenções de código Java da *Sun Code Conventions*, foram encontrados 47 problemas no código. Dentre eles, podemos citar problemas envolvendo “números mágicos”, importações genéricas, linhas com mais de 80 caracteres, ausência de comentários Javadoc, linhas com espaços em branco à direita e ausência de linha em branco ao final do arquivo.
 
+Para a análise de complexidade, quase todos os métodos mostraram ter baixa complexidade cognitiva, exceto um que mostrou um nível alto (18). 
+
+![resultado da avaliação cognitiva dos casos de teste gerados pelo deepseek](public/rq2-cognitive-deepseek.png)
+
+Ademais, na avaliação de complexidade ciclomática, 10 dos 11 demonstraram ter um nível baixo, enquanto 1 método mostrou uma complexidade moderada.
+
+![resultado da avaliação ciclomática dos casos de teste gerados pelo deepseek](public/rq2-cyclomatic-deepseek.png)
+
+Portanto, assim como os testes gerados pelo *ChatGPT*, a maioria dos testes gerados pelo DeepSeek também são simples de entender.
+
 #### RQ3.
 A partir da análise de cobertura de código realizada pelo `JaCoCo`, avaliando os casos de teste gerados pelo *Deepseek*, obtivemos os seguintes resultados:
 
@@ -113,6 +125,9 @@ Essa análise sugere que o conjunto de teste tem uma cobertura estrutural sólid
 
 #### RQ4.
 
+A partir das classes [`Days.java`](src/Defects4j/Days.java) e [`Months.java`](src/Defects4j/Months.java), encontradas no *dataset* do *Defects4j*, foram gerados casos de testes pelo *DeepSeek*. Dessa forma, usando o *benckmark* do *Defects4j* para esses casos de testes foram encontrados 2 bugs em uma das classes geradas. O problema foi causado pelo desconhecimento do *DeepSeek* do projeto inteiro quando criou o caso de teste.
+
+![imagem do console do defects4j para os casos de teste do deepseek](public/rq4-defects4j-deepseek.png)
 
 ## 7. Potencial de uso da solução
 
