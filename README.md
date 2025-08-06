@@ -28,7 +28,7 @@ Em síntese, a proposta utiliza a aptidão do ChatGPT para entender o significad
 
 O modelo utilizado no trabalho selecionado é o *GPT-3*. Atualmente, o modelo não está mais acessível. Com relação ao tipo de arquitetura, o *GPT-3* foi construído sobre decodificadores *Transformer* multicamada, ou seja, é do tipo *decoder-only*.
 
-Já nos exemplos, usamos o modelo DeepSeek-V3-Base. Ela está disponível no *HuggingFace* através desse (*link*)[https://huggingface.co/deepseek-ai/DeepSeek-V3-Base]. Assim como o *GTP-3*, esse modelo é do tipo *decoder-only*.
+Já nos exemplos, usamos o modelo DeepSeek-V3-Base. Ela está disponível no *HuggingFace* através desse [*link*](https://huggingface.co/deepseek-ai/DeepSeek-V3-Base). Assim como o *GTP-3*, esse modelo é do tipo *decoder-only*.
 
 ## 5. Identificação do dataset
 
