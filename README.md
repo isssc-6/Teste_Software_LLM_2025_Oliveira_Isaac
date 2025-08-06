@@ -83,14 +83,16 @@ O EvoSuite geralmente detectou mais bugs e alcançou maior cobertura de código.
 
 Para o nosso exemplo, replicaremos a sequência de avaliações feitas no artigo utilizando a mesma versão do SBST *Evosuite* para gerar os arquivos de teste, enquanto a LLM escolhida foi o *DeepSeek*, que também irá gerar nossos arquivos de teste. Em favor da complexidade da tarefa, realizamos o processo com apenas uma classe Java, a `WikipediaInfo.java`, uma das classes testadas no artigo original.
 
-#### RQ2
+#### RQ1.
+
+#### RQ2.
 Assim como foi feito no artigo, a verificação de legibilidade foi realizada com o uso da ferramenta Checkstyle, o que permitiu a avaliação da aderência dos testes gerados pelo *DeepSeek* às convenções de código Java da *Sun* e ao guia de estilo Java do Google.
 
 Como resultado, considerando a padronização de estilo Java do Google, foram identificadas 61 inconsistências no total. Dentre as violações, os problemas estavam relacionados à indentação, à ordem e à formatação das importações, além do uso de importações genéricas.
 
 Já na verificação feita utilizando as convenções de código Java da *Sun Code Conventions*, foram encontrados 47 problemas no código. Dentre eles, podemos citar problemas envolvendo “números mágicos”, importações genéricas, linhas com mais de 80 caracteres, ausência de comentários Javadoc, linhas com espaços em branco à direita e ausência de linha em branco ao final do arquivo.
 
-#### RQ3
+#### RQ3.
 A partir da análise de cobertura de código realizada pelo `JaCoCo`, avaliando os casos de teste gerados pelo *Deepseek*, obtivemos os seguintes resultados:
 
 **Cobertura de Instruções (56%):** das 464 instruções totais, apenas 204 foram executadas pelos testes;
@@ -106,6 +108,10 @@ A partir da análise de cobertura de código realizada pelo `JaCoCo`, avaliando 
 Já na análise de cobertura realizada pelo *Evosuite*, que calcula as métricas do arquivo que foi gerado. O resultado alcançou cobertura de linhas, *branches*, métodos e exceções perfeitas, ou seja, 100% das linhas, pontos de decisão, métodos e exceptions foram cobertos. A métrica mais fraca foi a cobertura de *output*, com apenas 12 dos 18 objetivos alcançados, o que sugere que faltam algumas validações de saída. O *Evosuite* também aplica mutação, neste código a *Mutation Score* de 47% indica que os testes conseguem matar apenas 47% dos mutantes, ou seja, há espaço para melhorar ainda mais os testes.
 
 Essa análise sugere que o conjunto de teste tem uma cobertura estrutural sólida, mas não tem uma cobertura muito boa sobre validações do comportamento esperado do código e asserções mais específicas como valores de retorno e estados alterados. Por isso o artigo de Tang sugere que as LLMs e o *Evosuite* podem ser complementares.
+
+![Captura de tela da análise feita pelo evosuite.](public/coverage_metrics.png)
+
+#### RQ4.
 
 
 ## 7. Potencial de uso da solução
