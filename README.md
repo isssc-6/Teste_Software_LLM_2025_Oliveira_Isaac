@@ -86,7 +86,7 @@ O EvoSuite geralmente detectou mais bugs e alcançou maior cobertura de código.
 Para o nosso exemplo, replicaremos a sequência de avaliações feitas no artigo utilizando a mesma versão do SBST *Evosuite* para gerar os arquivos de teste, enquanto a LLM escolhida foi o *DeepSeek*, que também irá gerar nossos arquivos de teste. Em favor da complexidade da tarefa, realizamos o processo com apenas uma classe Java, a `WikipediaInfo.java`, uma das classes testadas no artigo original.
 
 #### RQ1.
-![resultado da execução dos testes gerados pelo deepseek](public/rq1-test execution.jpg)
+![resultado da execução dos testes gerados pelo deepseek](public/rq1-test-execution.jpg)
 
 #### RQ2.
 Assim como foi feito no artigo, a verificação de legibilidade foi realizada com o uso da ferramenta Checkstyle, o que permitiu a avaliação da aderência dos testes gerados pelo *DeepSeek* às convenções de código Java da *Sun* e ao guia de estilo Java do Google.
