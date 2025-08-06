@@ -109,7 +109,7 @@ Já na análise de cobertura realizada pelo *Evosuite*, que calcula as métricas
 
 Essa análise sugere que o conjunto de teste tem uma cobertura estrutural sólida, mas não tem uma cobertura muito boa sobre validações do comportamento esperado do código e asserções mais específicas como valores de retorno e estados alterados. Por isso o artigo de Tang sugere que as LLMs e o *Evosuite* podem ser complementares.
 
-![Captura de tela da análise feita pelo evosuite.](public/coverage_metrics.png)
+![Captura de tela da análise feita pelo evosuite.](public/coverage_metrics.jpg)
 
 #### RQ4.
 
