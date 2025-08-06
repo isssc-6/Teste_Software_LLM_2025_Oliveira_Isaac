@@ -88,6 +88,10 @@ Para o nosso exemplo, replicaremos a sequência de avaliações feitas no artigo
 #### RQ1.
 ![resultado da execução dos testes gerados pelo deepseek](public/rq1-test-execution.jpg)
 
+A execução dos testes gerados pelo DeepSeek para a classe WikipediaInfo.java apresentou 9 casos de teste, dos quais 8 foram aprovados e 1 apresentou falha. A falha ocorreu no teste testGetTotalCategorizedArticles, pois o valor esperado era 4, mas o teste retornou 5. Isso indica que embora os testes gerados sejam em sua maioria funcionais ainda assim podem conter falhas.
+
+Esses resultados demonstram que o DeepSeek é capaz de criar testes executáveis que verificam corretamente a maioria dos comportamentos da classe, porém ainda requer ajustes manuais em alguns casos para garantir maior precisão.
+
 #### RQ2.
 Assim como foi feito no artigo, a verificação de legibilidade foi realizada com o uso da ferramenta Checkstyle, o que permitiu a avaliação da aderência dos testes gerados pelo *DeepSeek* às convenções de código Java da *Sun* e ao guia de estilo Java do Google.
 
