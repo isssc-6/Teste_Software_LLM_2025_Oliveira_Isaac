@@ -86,9 +86,9 @@ O EvoSuite geralmente detectou mais bugs e alcançou maior cobertura de código.
 Para o nosso exemplo, replicaremos a sequência de avaliações feitas no artigo utilizando a mesma versão do SBST *Evosuite* para gerar os arquivos de teste, enquanto a LLM escolhida foi o *DeepSeek*, que também irá gerar nossos arquivos de teste. Em favor da complexidade da tarefa, realizamos o processo com apenas uma classe Java, a `WikipediaInfo.java`, uma das classes testadas no artigo original.
 
 #### RQ1.
-![resultado da execução dos testes gerados pelo deepseek](public/rq1-test-execution.jpg)
-
 A execução dos testes gerados pelo DeepSeek para a classe WikipediaInfo.java apresentou 9 casos de teste, dos quais 8 foram aprovados e 1 apresentou falha. A falha ocorreu no teste testGetTotalCategorizedArticles, pois o valor esperado era 4, mas o teste retornou 5. Isso indica que embora os testes gerados sejam em sua maioria funcionais ainda assim podem conter falhas.
+
+![resultado da execução dos testes gerados pelo deepseek](public/rq1-test-execution.jpg)
 
 Esses resultados demonstram que o DeepSeek é capaz de criar testes executáveis que verificam corretamente a maioria dos comportamentos da classe, porém ainda requer ajustes manuais em alguns casos para garantir maior precisão.
 
