@@ -83,7 +83,7 @@ O EvoSuite geralmente detectou mais bugs e alcançou maior cobertura de código.
 
 ### 6.5. Exemplo de avaliação da solução
 
-Para o nosso exemplo, replicaremos a sequência de avaliações feitas no artigo utilizando a mesma versão do SBST *Evosuite* para gerar os arquivos de teste, enquanto a LLM escolhida foi o *DeepSeek*, que também irá gerar nossos arquivos de teste. Em favor da complexidade da tarefa, realizamos o processo com apenas uma classe Java, a `WikipediaInfo.java`, uma das classes testadas no artigo original.
+Para o nosso exemplo, replicaremos a sequência de avaliações feitas no artigo utilizando a mesma versão do SBST *Evosuite* para gerar os arquivos de teste, enquanto a LLM escolhida foi o *DeepSeek*, que também irá gerar nossos arquivos de teste. Em favor da complexidade da tarefa, realizamos o processo com apenas uma classe Java, a [`WikipediaInfo.java`](src/DynaMOSA/WikipediaInfo.java), uma das classes testadas no artigo original e das classes [`Days.java`](src/Defects4j/Days.java) e [`Months.java`](src/Defects4j/Months.java).
 
 #### RQ1.
 A execução dos testes gerados pelo DeepSeek para a classe WikipediaInfo.java apresentou 9 casos de teste, dos quais 8 foram aprovados e 1 apresentou falha. A falha ocorreu no teste testGetTotalCategorizedArticles, pois o valor esperado era 4, mas retornou 5. Isso indica que os testes gerados pela LLM funcionaram corretamente.
