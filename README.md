@@ -172,4 +172,8 @@ Essa abordagem permitiria ao ChatGPT aprender e auto-corrigir em um ambiente de 
 
 ## 10. Problema no StackOverFlow
 
-*Identificar um problema registrado no stackoverflow que poderia utilizar a solução descrita no artigo por você selecionado. Apresente o nome do problema cadastrado no Stackoverflow, a justificativa da seleção em relação à sugestão apresentada no artigo e a URL do problema no Stackoverflow.*
+**Nome do problema:** *JUnit 4 Test Suites*
+
+**URL do problema:** https://stackoverflow.com/questions/457276/junit-4-test-suites
+
+Como abordado pelas seções anteriores deste trabalho, o artigo escolhido avalia ferramentas para a geração de testes utilizando o JUnit. Nesse sentido, o problema que investiga como criar suítes de testes com JUnit 4 foi escolhido porque os instrumentos mencionados, como o ChatGPT, podem ser utilizados para alcançar uma solução de forma direta.
