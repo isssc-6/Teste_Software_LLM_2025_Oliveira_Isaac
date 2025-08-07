@@ -90,7 +90,7 @@ A execução dos testes gerados pelo DeepSeek para a classe WikipediaInfo.java a
 
 ![resultado da execução dos testes gerados pelo deepseek](public/rq1-test-execution.jpg)
 
-Esses resultados demonstram que o DeepSeek é capaz de criar testes executáveis que verificam corretamente o comportamentos da classe.
+Esses resultados demonstram que o DeepSeek é capaz de criar testes executáveis que verificam corretamente o comportamentos da classe, inclusive o valor esperado da função.
 
 #### RQ2.
 Assim como foi feito no artigo, a verificação de legibilidade foi realizada com o uso da ferramenta Checkstyle, o que permitiu a avaliação da aderência dos testes gerados pelo *DeepSeek* às convenções de código Java da *Sun* e ao guia de estilo Java do Google.
