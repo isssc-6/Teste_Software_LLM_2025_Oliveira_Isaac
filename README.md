@@ -1,3 +1,10 @@
+## Integrantes:
+-EDGAR DE SOUZA DIAS 
+-ISAAC LEVI LIRA DE OLIVEIRA 
+-JOSÉ MATHEUS RIBEIRO DOS SANTOS 
+-LEONARDO ALEXANDRE DE SOUZA BARRETO
+-ULISSES DE JESUS CAVALCANTE 
+
 ## 1. Identificação do Artigo
 
 **Nome:** *ChatGPT vs SBST: A Comparative Assessment of Unit Test Suite Generation*
